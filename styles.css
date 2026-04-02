@@ -339,7 +339,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   margin-bottom: 30px; 
 }
 
-/* Cards */
+/* Cards  */
 .stat { 
   background: #ffffff; 
   padding: 40px 20px; 

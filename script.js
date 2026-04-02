@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // =========================================
-  // 2. ACCESSIBILITY MODE (Colorblind)
+  // 2. ACCESSIBILITY MODE (Colorblind) 
   // =========================================
   const accessBtn = document.getElementById('accessibility-toggle');
   
