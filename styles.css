@@ -1,15 +1,15 @@
 /* =========================================
-   1. VARIABLES Y CONFIGURACIÓN GLOBAL
+  1. VARIABLES AND GLOBAL CONFIGURATION
    ========================================= */
 :root {
 
   --color-primary: #ed4bbc;       /* Magenta */
-  --color-secondary-bg: #fff200;  /* Amarillo vibrante */
-  --color-accent-blue: #3fabd8;   /* Azul Claro */
+  --color-secondary-bg: #fff200;  /* Yellow */
+  --color-accent-blue: #3fabd8;   /* Blue */
   
-  --color-bg-stats: #d960c4;      /* Rosa fondo Stats */
-  --color-btn-yellow: #ffdb33;    /* Amarillo botón */
-  --color-bg-who: #6dcff6;        /* Azul Cian */
+  --color-bg-stats: #d960c4;      /* Pink background Stats */
+  --color-btn-yellow: #ffdb33;    /* Yellow Button */
+  --color-bg-who: #6dcff6;        /* Cyan Blue */
   
   --color-text-dark: #222222;     
   --color-text-light: #ffffff;
@@ -20,23 +20,23 @@
   --header-height: 90px;
 }
 
-/* --- MODO DALTÓNICO / ACCESIBILIDAD */
+/* ---COLORBLIND MODE / ACCESSIBILITY */
 html[data-theme="colorblind"] {
-  /* Paleta de Alto Contraste (Azul / Amarillo Ocre) */
-  --color-primary: #005AB5;       /* Azul Fuerte (Reemplaza al magenta) */
-  --color-secondary-bg: #FFD500;  /* Amarillo Puro (Alto contraste) */
-  --color-accent-blue: #004287;   /* Azul Oscuro para textos */
+  /* High Contrast Palette (Blue / Yellow) */
+  --color-primary: #005AB5;       /* Strong Blue (Replaces magenta) */
+  --color-secondary-bg: #FFD500;  /* Pure Yellow (High contrast) */
+  --color-accent-blue: #004287;   /* Dark blue for text */
   
-  --color-bg-stats: #004287;      /* Fondo Stats: Azul Oscuro */
-  --color-btn-yellow: #FFD500;    /* Botones: Amarillo */
-  --color-bg-who: #2c3e50;        /* Fondo Who: Gris Azulado Oscuro (Mejor contraste) */
+  --color-bg-stats: #004287;      /* Background Stats: Dark Blue */
+  --color-btn-yellow: #FFD500;    /* Buttons: Yellow*/
+  --color-bg-who: #2c3e50;        /* Who Background: Dark Blue-Gray */
   
-  --color-text-dark: #000000;     /* Negro Puro */
-  --color-text-light: #ffffff;    /* Blanco Puro */
-  --color-bg-light: #e0e0e0;      /* Gris claro para fondos suaves */
+  --color-text-dark: #000000;     /* Pure Black */
+  --color-text-light: #ffffff;    /* Pure White */
+  --color-bg-light: #e0e0e0;      /* Light gray */
 }
 
-/* Estilos del Botón Flotante */
+/* Floating Button Styles */
 .accessibility-btn {
   position: fixed;
   bottom: 20px;
@@ -61,16 +61,16 @@ html[data-theme="colorblind"] {
   background-color: #f0f0f0;
 }
 
-/* Estilo del botón cuando el modo está ACTIVO */
+/* Button style when the mode is ACTIVE */
 html[data-theme="colorblind"] .accessibility-btn {
-  background-color: #005AB5; /* Se pone azul */
+  background-color: #005AB5;
   color: #fff;
   border-color: #FFD500;
 }
 
-/* --- NUEVA REGLA PARA EL TEXTO DE SPOTS --- */
+/* --- NEW RULE FOR SPOT TEXT --- */
 .spots-text {
-  display: none; /* Oculto por defecto en escritorio */
+  display: none; /* Hidden by default on desktop */
   margin-bottom: 15px; 
   color: #333; 
   font-weight: 600; 
@@ -94,7 +94,7 @@ ul { list-style: none; }
 h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 
 /* ---------------------- */
-/* 2. BOTONES */
+/* 2. BUTTONS */
 /* ---------------------- */
 .btn-primary {
   background: var(--color-primary);
@@ -132,12 +132,12 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 .highlight { color: var(--color-primary); font-style: italic; }
 
 /* ---------------------- */
-/* 3. HEADER (ESTILO IDENTICO AL ORIGINAL) */
+/* 3. HEADER  */
 /* ---------------------- */
 .header {
   width: 100%;
-  height: auto; /* Altura automática */
-  padding: 25px 5%; /* Un poco más de aire */
+  height: auto; 
+  padding: 25px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,7 +192,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 }
 
 /* ---------------------- */
-/* 4. HERO (AJUSTE PARA ENCAJAR CON HEADER TRANSPARENTE) */
+/* 4. HERO (ADJUSTABLE TO FIT WITH CLEAR HEADER)*/
 /* ---------------------- */
 .hero {
   position: relative;
@@ -204,7 +204,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   overflow: hidden;
 }
 
-/* Fondo amarillo curvado */
+/* Curved yellow background*/
 .hero::before {
   content: '';
   position: absolute;
@@ -218,7 +218,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 
 }
 
-/* Círculo decorativo gigante de la derecha */
+/* Giant decorative circle on the right */
 .hero::after {
   content: '';
   position: absolute;
@@ -261,7 +261,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   }
   
   .nav.active {
-    display: block; /* Clase para JS */
+    display: block; /* JS CLASS*/
   }
   
   .nav ul {
@@ -314,7 +314,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   align-items: center; 
 }
 
-/* Círculos de fondo */
+/* background circles */
 .stats::before, .stats::after {
   content: '';
   position: absolute;
@@ -339,7 +339,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   margin-bottom: 30px; 
 }
 
-/* Tarjetas */
+/* Cards */
 .stat { 
   background: #ffffff; 
   padding: 40px 20px; 
@@ -381,7 +381,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 .image-content img { max-width: 100%; height: auto; }
 
 /* ---------------------- */
-/* 7. HELP SECTION (SOLUCIÓN FINAL: POSICIONAMIENTO ABSOLUTO) */
+/* 7. HELP SECTION */
 /* ---------------------- */
 .help {
   background: #ffffff;
@@ -391,12 +391,12 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   height: 794px;
   margin: 0 auto;
   
-  /* Configuración para posicionamiento */
+  /* Positioning configuration */
   position: relative; 
   padding-top: 80px; 
   overflow: hidden;   
   
-  /* Centrado de textos */
+  /* Text centering */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,7 +490,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   position: relative; overflow: hidden; z-index: 2; padding: 80px 5%;
 }
 
-/* DECORACIÓN FONDO (Círculos Blancos) */
+/* BACKGROUND DECORATION (White Circles) */
 .what-you-get::before { content: ''; position: absolute; left: -200px; top: 20%; width: 600px; height: 600px; border: 50px solid #ffffff; border-radius: 50%; z-index: 0; }
 .what-you-get::after { content: ''; position: absolute; right: -150px; top: -150px; width: 700px; height: 700px; border: 60px solid #ffffff; border-radius: 50%; z-index: 0; }
 .benefits::before { content: ''; position: absolute; right: -50px; bottom: -50px; width: 200px; height: 200px; border: 35px solid #ffffff; border-radius: 50%; z-index: -1; }
@@ -498,7 +498,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 .what-you-get h2 { font-size: 3rem; margin-bottom: 60px; position: relative; z-index: 1; padding: 2rem;}
 .benefits { display: flex; gap: 40px; position: relative; z-index: 1; margin-bottom: 60px;}
 
-/* TARJETAS */
+/* CARDS */
 .benefit-card { background: white; width: 480px; padding: 50px 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.03); text-align: left; }
 .benefit-card h3 { font-family: var(--font-heading); font-size: 1.8rem; text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
 .benefit-card:nth-child(1) h3 { color: var(--color-accent-blue); border-color: rgba(63, 171, 216, 0.2); }
@@ -508,7 +508,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 .what-you-get .btn-primary { position: relative; z-index: 1; margin-top: 0; }
 
 /* ---------------------- */
-/* 9. FAQ SECTION (ESTILO REPLICADO) */
+/* 9. FAQ SECTION */
 /* ---------------------- */
 .faq-section {
   background-color: #ffffff;
@@ -523,7 +523,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   overflow: hidden; 
 }
 
-/* DECORACIÓN DE FONDO (Círculos a la derecha) */
+/* BACKGROUND DECORATION  */
 .faq-section::before {
   content: '';
   position: absolute;
@@ -614,7 +614,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 
 
 .faq-item.active .faq-question::after {
-  transform: rotate(-135deg); /* Girar flecha hacia arriba */
+  transform: rotate(-135deg); /* Turn arrow upwards */
 }
 
 .faq-answer {
@@ -648,7 +648,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 }
 
 /* ---------------------- */
-/* 10. FOOTER (DISEÑO FINAL) */
+/* 10. FOOTER */
 /* ---------------------- */
 .footer {
   background-color: #f9f9f9;
@@ -696,7 +696,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   z-index: 1;
 }
 
-/* --- INFO IZQUIERDA --- */
+/* --- INFO  --- */
 .footer-info {
   display: flex;
   flex-direction: column;
@@ -725,7 +725,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   font-size: 0.95rem;
 }
 
-/* Estilo para los iconos pequeños de contacto*/
+/* Style for small contact icons */
 .icon-small {
   width: 20px;
   height: 20px;
@@ -733,7 +733,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   filter: invert(53%) sepia(93%) saturate(335%) hue-rotate(288deg) brightness(91%) contrast(91%);
 }
 
-/* --- ICONOS REDES SOCIALES --- */
+/* --- SOCIAL MEDIA ICONS --- */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -756,7 +756,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   opacity: 0.9;
 }
 
-/* --- LINKS DERECHA --- */
+/* --- LINKS  --- */
 .footer-links-container {
   display: flex;
   justify-content: space-around; 
@@ -844,7 +844,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     background: #fff;
   }
 
-  /* FONDO AMARILLO */
+  /* YELLOW BACKGROUND */
   .hero::before { 
     display: block;
     width: 50%; 
@@ -858,7 +858,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   }
   .hero::after { display: none; }
 
-  /* CONTENEDOR PRINCIPAL (FLEX COLUMN) */
+  /* MAIN CONTAINER (FLEX COLUMN) */
   .hero-container { 
     display: flex;
     flex-direction: column; 
@@ -871,9 +871,9 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     display: contents; 
   }
 
-  /* --- ORDEN Y ALINEACIÓN --- */
+  /* --- ORDER AND ALIGNMENT --- */
 
-  /* 1. TÍTULO  */
+  /* 1. TITLE  */
   .hero-left h1 { 
     order: 1;
     align-self: flex-start; 
@@ -885,7 +885,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 10;
   }
 
-  /* 2. TEXTO "ONLY 11 SPOTS"*/
+  /* 2. TEXT "ONLY 11 SPOTS" */
   .spots-text {
     display: block !important;
     order: 2;
@@ -898,7 +898,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 20;
   }
 
-  /* 3. CONTADOR*/
+  /* 3. COUNTER*/
   .countdown-box {
     order: 3;
     align-self: center; 
@@ -912,7 +912,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 20;
   }
 
-/* 4. PÁRRAFO */
+/* 4. PARAGRAPH */
   .hero-left p {
 
     order: 4;
@@ -930,7 +930,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 10;
   }
 
-  /* 5. BOTÓN */
+  /* 5. BUTTON */
   .btn-primary { 
     order: 5;
     align-self: center; 
@@ -941,14 +941,14 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     box-shadow: 0 10px 25px rgba(237, 75, 188, 0.4);
   }
 
-  /* Ajustes internos del contador */
+  /* Counter settings */
   .hero-right { margin: 0; padding: 0; }
   .countdown-grid { gap: 10px; }
   .countdown-grid small { font-size: 10px; font-weight: 700; letter-spacing: 0.5px; color: var(--color-accent-blue); }
   .countdown-grid span { font-size: 2.4rem; font-weight: 400; color: #333; }
 
 
-  /* --- OTRAS SECCIONES --- */
+  /* --- OTHER SECTIONS --- */
   .stats-container { grid-template-columns: repeat(2, 1fr); } 
   .who-for { grid-template-columns: 1fr; text-align: center; gap: 60px; padding: 60px 30px; }
   .text-content { padding: 0; } 
@@ -1002,7 +1002,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     width: 100%;
   }
 
-  /* BLOQUE DE TEXTO */
+  /* TEXT BLOCK */
   .text-content { 
     width: 100%;
     max-width: 600px;
@@ -1024,14 +1024,14 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     color: #fff;
     opacity: 0.95;
   }
-
-  /* Botón alineado a la izquierda del bloque de texto */
+Button aligned to the left of the text block
+  /* Button aligned to the left of the text block*/
   .who-for .btn-primary {
     margin-top: 10px;
     display: inline-block;
   }
 
-  /* DECORACIÓN E IMAGEN */
+  /* DECORATION AND IMAGE */
   .circle-left-decor { left: -600px; }
   .circle-right-decor { right: -200px; top: 50px; opacity: 0.5; }
   
@@ -1076,9 +1076,9 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     display: contents;
   }
 
-  /* --- REORDENAMIENTO --- */
+  /* --- REORDERING --- */
 
-  /* 1. Título */
+  /* 1. TITLE */
   .help h2 {
     order: 1;
     font-size: 2.5rem;
@@ -1088,7 +1088,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 1;
   }
 
-  /* 2. Primer Párrafo */
+  /* 2. First Paragraph*/
   .help p:nth-of-type(1) {
     order: 2;
     text-align: left;
@@ -1099,7 +1099,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 1;
   }
 
-  /* 3. LA FOTO */
+  /* 3. picture */
   .group-photo {
     order: 3;
     position: static; 
@@ -1111,7 +1111,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 1;
   }
 
-  /* CAMBIO DE IMAGEN */
+  /* MAKEOVER */
   .group-photo img {
     content: url('/images/groupOfPeople.jpg'); 
     width: 100%;
@@ -1120,7 +1120,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     border-radius: 0;
   }
 
-  /* 4. Segundo Párrafo */
+  /* 4. Second Paragraph */
   .help p:nth-of-type(2) {
     order: 4;
     text-align: left;
@@ -1131,7 +1131,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 1;
   }
 
-  /* 5. Botón */
+  /* 5. Button */
   .help .btn-primary {
     order: 5;
     align-self: center; 
@@ -1143,7 +1143,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 }
 
 /* ---------------------- */
-/* 12. RESPONSIVE - MÓVIL (MAX 600PX) - DISEÑO HÍBRIDO */
+/* 12. RESPONSIVE - mobile (MAX 600PX) */
 /* ---------------------- */
 
 @media (max-width: 600px) {
@@ -1162,7 +1162,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 
   .hero::before { 
     display: block;
-    width: 50%; /* Ocupa la mitad derecha */
+    width: 50%; 
     height: 100%;
     background: var(--color-secondary-bg);
     border-radius: 0; 
@@ -1172,7 +1172,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 0;
   }
 
-  /* CONTENEDOR: FLEX VERTICAL */
+  /* Container: FLEX VERTICAL */
   .hero-container { 
     display: flex;
     flex-direction: column;
@@ -1185,10 +1185,10 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   .hero-left, .hero-right {
     display: contents; 
   }
+MOBILE ORDER AND ALIGNMENT
+  /* --- MOBILE ORDER AND ALIGNMENT --- */
 
-  /* --- ORDEN Y ALINEACIÓN MÓVIL --- */
-
-  /* 1. TÍTULO  */
+  /* 1. TITLE  */
   .hero-left h1 { 
     order: 1;
     font-size: 2.4rem; 
@@ -1199,7 +1199,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 10;
   }
 
-  /* 2. TEXTO "ONLY 11 SPOTS" */
+  /* 2. TEXT "ONLY 11 SPOTS" */
   .spots-text {
     display: block !important;
     order: 2;
@@ -1213,7 +1213,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     z-index: 20;
   }
 
-  /* 3. CONTADOR */
+  /* 3. COUNTER */
   .countdown-box {
     order: 3;
     align-self: center;
@@ -1226,11 +1226,11 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     border-radius: 20px;
     z-index: 20;
   }
-  /* Ajuste interno contador móvil */
+  /* Mobile counter internal adjustment */
   .countdown-grid small { font-size: 9px; letter-spacing: 0; }
   .countdown-grid span { font-size: 2rem; }
 
-  /* 4. PÁRRAFO  */
+  /* 4. PARAGRAPH */
   .hero-left p {
     order: 4;
     align-self: center;
@@ -1243,7 +1243,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     padding: 0 10px; 
   }
 
-  /* 5. BOTÓN */
+  /* 5. BUTTON */
   .btn-primary { 
     order: 5;
     align-self: center;
@@ -1256,7 +1256,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     box-shadow: 0 10px 25px rgba(237, 75, 188, 0.4);
   }
 
-  /* --- OTRAS SECCIONES  --- */
+  /* --- OTHER SECTIONS  --- */
   .stats-container { grid-template-columns: repeat(2, 1fr); gap: 10px; } 
   .stat { min-height: 160px; padding: 15px; }
   .stat h2 { font-size: 1.8rem; }
@@ -1281,11 +1281,11 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 }
 
 /* ---------------------- */
-/* 13. MENÚ HAMBURGUESA CON ANIMACIÓN (ENTRADA Y SALIDA)*/
+/* 13. BURGER MENU WITH ENTERTAINMENT (ENTRY AND EXIT)*/
 /* ---------------------- */
 
 @media (max-width: 1024px) {
-  /* Estado Base del Menú (Cerrado) */
+  /* Base Menu State (Closed) */
   .nav {
     display: block; 
     position: absolute;
@@ -1298,21 +1298,21 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
     border-top: 1px solid #eee;
     z-index: 1000;
     
-    /* PROPIEDADES PARA LA ANIMACIÓN */
+    /* PROPERTIES FOR ANIMATION */
     opacity: 0;            
     visibility: hidden;     
     transform: translateY(-20px); 
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  /* Estilos de la lista */
+  /* List styles */
   .nav ul {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
-  /* Estado Activo  - JS agrega esta clase */
+  /* Active State */
   .nav.active {
     opacity: 1;            
     visibility: visible;   
@@ -1321,7 +1321,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 }
 
 /* ---------------------- */
-/*  14. BOTÓN VOLVER ARRIBA (BACK TO TOP)*/
+/*  14. BACK TO TOP BUTTON */
 /* ---------------------- */
 .back-to-top {
   position: fixed;
@@ -1340,7 +1340,7 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   justify-content: center;
   align-items: center;
   
-  /* Estado Inicial: Oculto y desplazado  */
+  /* Initial State: Hidden and displaced  */
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -1355,14 +1355,14 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* Clase que agrega JS para mostrarlo */
+/* Class that adds JS to display it */
 .back-to-top.visible {
   opacity: 1;
   visibility: visible;
   transform: translateY(0); 
 }
 
-/* Ajuste para que no choque con el botón de accesibilidad */
+/* Adjust so it doesn't clash with the accessibility button */
 @media (max-width: 600px) {
   .back-to-top {
     bottom: 20px;
@@ -1373,10 +1373,10 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
 }
 
 /* ---------------------- */
-/*  15. INTERACTIVIDAD FAQ */
+/*  15. INTERACTIVITY FAQ*/
 /* ---------------------- */
 
-/* 1. Estilo base de la respuesta (Oculto) */
+/* 1. Basic response style (Hidden) */
 .faq-answer {
   display: none;
   padding: 20px 30px;
@@ -1385,27 +1385,27 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--color-text-dark); }
   color: var(--text-light, #555);
 }
 
-/* 2. Estilo cuando está ACTIVO (Visible) */
+/* 2. Style when ACTIVE (Visible) */
 .faq-item.active .faq-answer {
   display: block !important; 
   border-top: 1px solid var(--border-color, #eee);
   animation: fadeIn 0.3s ease;
 }
 
-/* 3. Cambio de color en el botón activo */
+/* 3. Change of color on the active button*/
 .faq-item.active .faq-question {
   background-color: var(--border-color, #eee); 
   color: var(--primary, #ed4bbc); 
   font-weight: 700;
 }
 
-/* 4. Rotación de la flecha */
+/* 4. Arrow rotation */
 .faq-item.active .faq-question::after {
   transform: rotate(-135deg); 
   border-color: var(--primary, #ed4bbc); 
 }
 
-/* Animación suave de aparición */
+/* Smooth appearance animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
