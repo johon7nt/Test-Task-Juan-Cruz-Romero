@@ -2,7 +2,7 @@
 
 A modern, fully responsive landing page designed for a medical weight loss center. This project focuses on user conversion through a clean interface, interactive elements, and a strong emphasis on accessibility.
 
-## 🚀 Key Features 
+## 🚀 Key Features  
 
 * **100% Responsive Design:**
     * **Desktop (1920px+):** Spacious layout with 4-column grids and side-by-side alignment.
