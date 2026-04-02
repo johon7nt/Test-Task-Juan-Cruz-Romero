@@ -23,4 +23,7 @@ A modern, fully responsive landing page designed for a medical weight loss cente
 * **CSS3:** Layout and animations (no external frameworks).
 * **JavaScript (ES6+):** DOM manipulation for interactivity.
 
+## 🌐 Web Link
 
+You can see the project at the following link:
+[**View Project on Vercel**](https://test-task-juan-cruz-romero.vercel.app/)
